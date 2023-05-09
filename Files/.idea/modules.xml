@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AverageGrade/AverageGrade.iml" filepath="$PROJECT_DIR$/AverageGrade/AverageGrade.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CreateMoveDelete/CreateMoveDelete.iml" filepath="$PROJECT_DIR$/CreateMoveDelete/CreateMoveDelete.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CustomException/CustomException.iml" filepath="$PROJECT_DIR$/CustomException/CustomException.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DemoBinaryFiles/DemoBinaryFiles.iml" filepath="$PROJECT_DIR$/DemoBinaryFiles/DemoBinaryFiles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DemosFile/DemosFile.iml" filepath="$PROJECT_DIR$/DemosFile/DemosFile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise 1_IoFile/Exercise 1_IoFile.iml" filepath="$PROJECT_DIR$/Exercise 1_IoFile/Exercise 1_IoFile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Files.iml" filepath="$PROJECT_DIR$/.idea/Files.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LiebanaJoseAntonio_AC02/LiebanaJoseAntonio_AC02.iml" filepath="$PROJECT_DIR$/LiebanaJoseAntonio_AC02/LiebanaJoseAntonio_AC02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ReadingAndWritingAppend/ReadingAndWritingAppend.iml" filepath="$PROJECT_DIR$/ReadingAndWritingAppend/ReadingAndWritingAppend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TextFileWriting/TextFileWriting.iml" filepath="$PROJECT_DIR$/TextFileWriting/TextFileWriting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TryCatch/TryCatch.iml" filepath="$PROJECT_DIR$/TryCatch/TryCatch.iml" />
+    </modules>
+  </component>
+</project>

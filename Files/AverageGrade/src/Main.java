@@ -15,8 +15,11 @@ public class Main {
      */
     public static void main(String[] args) throws IOException {
         // Creamos un objeto de tipo File para el directorio donde se encuentran el fichero scores.txt
+        // es decir, inputFile es el propio fichero scores.txt
         File inputFile = new File("scores.txt");
         // Creamos un objeto de tipo File para el directorio donde se creará el fichero AverageGradeFile.txt
+        // que sera el mismo directorio que el fichero scores.txt
+        // es decir outputFile es el propio fichero AverageGradeFile.txt
         File outputFile = new File("AverageGradeFile.txt");
 
         // Empelamos un bloque try-catch para controlar las excepciones
