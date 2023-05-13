@@ -45,6 +45,7 @@ Hereda de InputStream.
   
 - Siempre hay que cerrar el flujo de entrada, para que se liberen los recursos.
 
+
 _______________________________________________________________
 
 
