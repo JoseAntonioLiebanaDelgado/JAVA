@@ -23,6 +23,7 @@ public class FitxerDirectoris {
 
     public static void UltimaModificacio(File arxiu) {
         Date dataUltimaModif = new Date(0);
-        System.out.println("La data de l'última modificació del fitxer:\n" + arxiu.getAbsolutePath() + " és: " + dataUltimaModif);
+        System.out.println("La data de l'última modificació del fitxer:\n"
+                + arxiu.getAbsolutePath() + " és: " + dataUltimaModif);
     }
 }

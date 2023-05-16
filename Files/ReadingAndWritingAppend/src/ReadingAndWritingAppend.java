@@ -1,3 +1,7 @@
+// Este programa lee y escribe en el mismo archivo de texto.
+// El programa lee el archivo de texto y lo muestra por pantalla.
+// El programa escribe en el archivo de texto.
+
 import java.io.*;
 import java.util.Scanner;
 

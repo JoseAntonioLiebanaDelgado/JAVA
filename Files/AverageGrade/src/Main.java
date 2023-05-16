@@ -100,7 +100,14 @@ public class Main {
             System.out.println("Error, " + e.getMessage());
 
         } finally {
-            // Cerramos el objetoLector
+            if (objetoEscritor != null) {
+                try {
+                    objetoEscritor.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
             if (objetoLector != null) {
                 try {
                     objetoLector.close();
@@ -108,16 +115,6 @@ public class Main {
                     e.printStackTrace();
                 }
                 objetoLector.close();
-            }
-
-            // Cerramos el objetoEscritor
-            if (objetoEscritor != null) {
-                // Empleamos un bloque try-catch para controlar las excepciones
-                try {
-                    objetoEscritor.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
             }
         }
     }
