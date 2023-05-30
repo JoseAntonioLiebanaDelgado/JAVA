@@ -1,6 +1,6 @@
 //5. Programar un algoritmo recursivo que permita sumar los elementos de una matriz.
 
-package Recursivitat;
+package Funciones_Corregidas.Recursion;
 
 public class LiebanaJoseAntonio_Exercici5 {
     public static void main(String[] args) {

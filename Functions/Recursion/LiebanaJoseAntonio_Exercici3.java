@@ -1,6 +1,6 @@
 //3. Programar un algoritmo recursivo que permita sumar los elementos de un vector.
 
-package Recursivitat;
+package Funciones_Corregidas.Recursion;
 
 public class LiebanaJoseAntonio_Exercici3 {
     public static void main(String[] args) {

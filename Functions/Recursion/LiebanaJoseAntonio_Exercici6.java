@@ -1,6 +1,6 @@
 //6. Programar un algoritmo recursivo que muestre el número menor de un vector.
 
-package Recursivitat;
+package Funciones_Corregidas.Recursion;
 
 public class LiebanaJoseAntonio_Exercici6 {
     public static void main(String[] args) {

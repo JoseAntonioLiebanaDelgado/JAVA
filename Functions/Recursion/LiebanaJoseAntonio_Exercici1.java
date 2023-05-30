@@ -1,6 +1,6 @@
 //1. Programar un algoritmo recursivo que permita hacer la división por restas sucesivas.
 
-package Recursivitat;
+package Funciones_Corregidas.Recursion;
 
 public class LiebanaJoseAntonio_Exercici1 {
     public static void main(String[] args) {

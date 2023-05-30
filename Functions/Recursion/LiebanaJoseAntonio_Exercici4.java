@@ -1,6 +1,6 @@
 //4. Programar un algoritmo recursivo que permita multiplicar los elementos de un vector
 
-package Recursivitat;
+package Funciones_Corregidas.Recursion;
 
 public class LiebanaJoseAntonio_Exercici4 {
     public static void main(String[] args) {

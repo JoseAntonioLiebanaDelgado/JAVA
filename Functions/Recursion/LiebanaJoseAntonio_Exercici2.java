@@ -1,6 +1,6 @@
 //2. Programar un algoritmo recursivo que permita sumar los dígitos de un número. Ejemplo: Entrada:123 Resultado:6
 
-package Recursivitat;
+package Funciones_Corregidas.Recursion;
 
 public class LiebanaJoseAntonio_Exercici2 {
     public static void main(String[] args) {

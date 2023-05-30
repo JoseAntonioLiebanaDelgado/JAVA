@@ -104,17 +104,17 @@ public class Biblioteca {
      * Mètode per trobar un llibre a la biblioteca
      *
      * @param biblioteca
-     * @param titul
+     * @param titol
      * @return
      */
-    private static void buscarLibro(ArrayList<String> biblioteca, String titul) {
+    private static void buscarLibro(ArrayList<String> biblioteca, String titol) {
         for (String llibres : biblioteca) {
-            if (llibres.equalsIgnoreCase(titul)) {
-                System.out.println("El llibre " + titul + " es troba a la biblioteca.");
+            if (llibres.equalsIgnoreCase(titol)) {
+                System.out.println("El llibre " + titol + " es troba a la biblioteca.");
                 return;
             }
         }
-        System.out.println("El llibre " + titul + " no es troba a la biblioteca.");
+        System.out.println("El llibre " + titol + " no es troba a la biblioteca.");
     }
 
     /**
@@ -170,21 +170,21 @@ public class Biblioteca {
     private static int llegirEnter(String missatge, int minim, int maxim) {
         Scanner sc = new Scanner(System.in);
         int opcio = 0;
-        boolean dadaCorrecta = false;
+        boolean dadaCorrecte = false;
 
         do {
             System.out.println(missatge);
             try {
                 opcio = Integer.parseInt(sc.nextLine());
                 if (opcio >= minim && opcio <= maxim) {
-                    dadaCorrecta = true;
+                    dadaCorrecte = true;
                 } else {
-                    System.out.println("La opció ha d'estar entre " + minim + " i " + maxim);
+                    System.out.println("L'opció ha d'estar entre " + minim + " i " + maxim);
                 }
             } catch (NumberFormatException ex) {
                 System.out.println("Ha d'introduir un número");
             }
-        } while (!dadaCorrecta);
+        } while (!dadaCorrecte);
 
         return opcio;
     }
