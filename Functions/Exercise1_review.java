@@ -4,14 +4,15 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- * En aquesta clase tenim un exemple de com fer un menú amb un ArrayList.
+ * En esta clase tenemos un ejemplo de cómo hacer un menú con un ArrayList.
  */
 public class Exercise1_review {
 
-    final static String MENU_PRINCIPAL = "\n\t1.Consultar biblioteca\n\t2.Consultar titol\n\t3.Inserir llibre\n\t4.Eliminar llibre\n\t5.Modificar llibre\n\t6.Reiniciar biblioteca\n\t7.Sortir";
+    final static String MENU_PRINCIPAL = "\n\t1.Consultar biblioteca\n\t2.Consultar título\n\t3.Insertar libro\n\t4.Eliminar libro\n\t5.Modificar libro\n\t6.Reiniciar biblioteca\n\t7.Salir\n";
+
 
     /**
-     * En el metode main tenim el menú principal amb les opcions que es poden fer a la biblioteca.
+     * En el método main tenemos el menú principal con las opciones que se pueden hacer en la biblioteca.
      *
      * @param args
      */
@@ -21,7 +22,7 @@ public class Exercise1_review {
         int opcioMenuPrincipal = 0;
 
         do {
-            System.out.println("Benvingut al programa");
+            System.out.println("Bienvenido al programa");
             opcioMenuPrincipal = llegirEnter(MENU_PRINCIPAL, 1, 7);
 
             switch (opcioMenuPrincipal) {
@@ -29,34 +30,35 @@ public class Exercise1_review {
                     imprimirLlibres(llibres);
                     break;
                 case 2:
-                    buscarLlibre(llibres, "El Quixot");
+                    String titol = llegirCadena("Introduce el título del libro: ");
+                    buscarLlibre(llibres, titol);
                     break;
                 case 3:
-                    inserirLlibre(llibres, "La comunidad del anillo");
+                    String nouLlibre = llegirCadena("Introduce el nombre del nuevo libro: ");
+                    inserirLlibre(llibres, nouLlibre);
                     break;
                 case 4:
-                    eliminarLlibre(llibres, "La comunidad del anillo");
+                    String llibreAEliminar = llegirCadena("Introduce el título del libro a eliminar: ");
+                    eliminarLlibre(llibres, llibreAEliminar);
                     break;
                 case 5:
-                    modificarLlibre(llibres, "El Quixot", "El nou Quixot 2.0");
+                    String titolActual = llegirCadena("Introduce el título del libro a modificar: ");
+                    String nouTitol = llegirCadena("Introduce el nuevo título del libro: ");
+                    modificarLlibre(llibres, titolActual, nouTitol);
                     break;
                 case 6:
                     llibres = reiniciarBiblioteca();
                     break;
                 case 7:
-                    System.out.println("Fins aviat!");
+                    System.out.println("¡Hasta luego!");
                     break;
             }
         } while (opcioMenuPrincipal != 7);
     }
 
     /**
-     * Aquest metode imprimeix els llibres que hi ha a la arraylist.
-     * Aquesta part del codi es un for each que recorre tota la arraylist i imprimeix els llibres que hi ha.
-     * <p>
-     * "for (String llibre : llibres) {
-     * System.out.println(llibre);
-     * }"
+     * Este método imprime los libros que hay en el ArrayList.
+     * Esta parte del código es un for each que recorre tod0 el ArrayList e imprime los libros que hay.
      *
      * @param llibres
      */
@@ -67,48 +69,48 @@ public class Exercise1_review {
     }
 
     /**
-     * Aquest metode busca un llibre a la arraylist.
+     * Este método busca un libro en el ArrayList.
      *
      * @param biblioteca
      * @param titol
      */
     private static void buscarLlibre(ArrayList<String> biblioteca, String titol) {
-        for (String llibres : biblioteca) {
-            if (llibres.equalsIgnoreCase(titol)) {
-                System.out.println("El llibre " + titol + " es troba a la biblioteca.");
+        for (String llibre : biblioteca) {
+            if (llibre.equalsIgnoreCase(titol)) {
+                System.out.println("El libro " + titol + " se encuentra en la biblioteca.");
                 return;
             }
         }
-        System.out.println("El llibre " + titol + " no es troba a la biblioteca.");
+        System.out.println("El libro " + titol + " no se encuentra en la biblioteca.");
     }
 
     /**
-     * Aquest metode afegeix un llibre a la arraylist.
+     * Este método agrega un libro al ArrayList.
      *
      * @param llibres
-     * @param nouLLibre
+     * @param nouLlibre
      */
-    private static void inserirLlibre(ArrayList<String> llibres, String nouLLibre) {
-        llibres.add(nouLLibre);
-        System.out.println("El llibre " + nouLLibre + "s'ha afegit a la biblioteca.");
+    private static void inserirLlibre(ArrayList<String> llibres, String nouLlibre) {
+        llibres.add(nouLlibre);
+        System.out.println("El libro " + nouLlibre + " se ha agregado a la biblioteca.");
     }
 
     /**
-     * Aquest metode elimina un llibre de la arraylist.
+     * Este método elimina un libro del ArrayList.
      *
      * @param llibres
      * @param llibreAEliminar
      */
     private static void eliminarLlibre(ArrayList<String> llibres, String llibreAEliminar) {
         if (llibres.removeIf(llibre -> llibre.equalsIgnoreCase(llibreAEliminar))) {
-            System.out.println("El llibre " + llibreAEliminar + " s'ha eliminat correctament de la biblioteca");
+            System.out.println("El libro " + llibreAEliminar + " se ha eliminado correctamente de la biblioteca.");
         } else {
-            System.out.println("El llibre " + llibreAEliminar + " no es troba a la biblioteca");
+            System.out.println("El libro " + llibreAEliminar + " no se encuentra en la biblioteca.");
         }
     }
 
     /**
-     * Aquest metode modifica un llibre de la arraylist.
+     * Este método modifica un libro del ArrayList.
      *
      * @param llibres
      * @param titolActual
@@ -118,14 +120,26 @@ public class Exercise1_review {
         int index = llibres.indexOf(titolActual);
         if (index != -1) {
             llibres.set(index, nouTitol);
-            System.out.println("El llibre " + titolActual + " ha estat modificat per " + nouTitol);
+            System.out.println("El libro " + titolActual + " ha sido modificado por " + nouTitol + ".");
         } else {
-            System.out.println("El llibre " + titolActual + " no es troba a la biblioteca");
+            System.out.println("El libro " + titolActual + " no se encuentra en la biblioteca.");
         }
     }
 
     /**
-     * Aquest metode llegeix un enter i el retorna.
+     * Este método lee una cadena de texto introducida por el usuario y la retorna.
+     *
+     * @param mensaje
+     * @return
+     */
+    private static String llegirCadena(String mensaje) {
+        Scanner input = new Scanner(System.in);
+        System.out.print(mensaje);
+        return input.nextLine();
+    }
+
+    /**
+     * Este método reinicia la biblioteca y retorna un ArrayList con los libros iniciales.
      *
      * @return
      */
@@ -143,7 +157,7 @@ public class Exercise1_review {
     }
 
     /**
-     * Aquest metode inicialitza la arraylist amb els llibres que hi ha a la biblioteca.
+     * Este método inicializa el ArrayList con los libros que hay en la biblioteca.
      *
      * @return
      */
@@ -151,7 +165,7 @@ public class Exercise1_review {
         ArrayList<String> biblioteca = new ArrayList<>();
         biblioteca.add("Tirant Lo Blanc");
         biblioteca.add("Solitud");
-        biblioteca.add("EL Quixot");
+        biblioteca.add("El Quixot");
         biblioteca.add("Sapiens");
         biblioteca.add("Teo va a l'escola");
         biblioteca.add("Jumanji");
@@ -161,62 +175,30 @@ public class Exercise1_review {
     }
 
     /**
-     * Aquest metode fa un control d'errors per a que l'usuari introdueixi un enter.
+     * Este método muestra un mensaje en pantalla y lee un número entero introducido por el usuario.
+     * El número debe estar dentro de un rango válido especificado.
      *
-     * @param missatgePrincipal
-     * @param minim
-     * @param maxim
+     * @param mensaje
+     * @param rangoInicial
+     * @param rangoFinal
      * @return
      */
-    private static int llegirEnter(String missatgePrincipal, int minim, int maxim) {
+    private static int llegirEnter(String mensaje, int rangoInicial, int rangoFinal) {
         Scanner input = new Scanner(System.in);
-        int opcio = 0;
-        boolean dadaCorrecte = false;
-
+        int valor;
         do {
-            System.out.println(missatgePrincipal);
-            try {
-                opcio = Integer.parseInt(input.nextLine());
-                if (opcio >= minim && opcio <= maxim) {
-                    dadaCorrecte = true;
-                } else {
-                    System.out.println("L'opcio ha d'estar entre " + minim + " i " + maxim);
-                }
-            } catch (NumberFormatException nfe) {
-                System.out.println("Ha d'introduir un número");
+            System.out.print(mensaje + ": ");
+            while (!input.hasNextInt()) {
+                System.out.println("¡Error! Debes introducir un número entero.");
+                System.out.print(mensaje + ": ");
+                input.next();
             }
-        } while (!dadaCorrecte);
-        return opcio;
+            valor = input.nextInt();
+            if (valor < rangoInicial || valor > rangoFinal) {
+                System.out.println("¡Error! Debes introducir un número entre " + rangoInicial + " y " + rangoFinal + ".");
+            }
+        } while (valor < rangoInicial || valor > rangoFinal);
+        return valor;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
