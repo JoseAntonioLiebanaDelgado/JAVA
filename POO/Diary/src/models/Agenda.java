@@ -6,8 +6,13 @@ import java.time.LocalTime;
 import java.time.Year;
 import java.util.Arrays;
 
+/**
+ * Classe Agenda
+ */
 public class Agenda {
+    // Creamos un atributo de tipo Year llamado year, el cual será el año de la agenda
     private Year year;
+    
     private Page[] pages;
 
     public Agenda(Year year){

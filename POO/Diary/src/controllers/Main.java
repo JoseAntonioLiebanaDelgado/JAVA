@@ -7,15 +7,31 @@ import java.time.LocalTime;
 import java.time.Year;
 import java.util.Scanner;
 
+/**
+ * Classe Main
+ */
 public class Main {
+
+    /**
+     * Mètode main, crea una tasca i la mostra per pantalla
+     * @param args
+     */
     public static void main(String[] args) {
         Task t = crearTasca();
     }
 
+    /**
+     * Mètode que crea una agenda
+     */
     public void crearAgenda(){
+        // Year.now() retorna l'any actual
         Agenda a = new Agenda(Year.now());
     }
 
+    /**
+     * Mètode que crea una tasca a partir de les dades introduïdes per l'usuari
+     * @return
+     */
     public static Task crearTasca(){
         Task t;
         LocalTime inici = LocalTime.now();

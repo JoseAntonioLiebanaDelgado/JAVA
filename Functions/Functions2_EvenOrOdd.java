@@ -11,12 +11,21 @@ package Funciones_Corregidas;
 import java.util.Scanner;
 
 public class Functions2_EvenOrOdd {
+    /**
+     * Metodo principal que llama al metodo controlBoolean y parIOmpar
+     * @param args
+     */
     public static void main(String[] args) {
 
         int userNumber = controlBoolean("Introduce un numero por favor");
         System.out.println(parIOmpar(userNumber));
     }
 
+    /**
+     * Metodo que controla que el numero introducido sea un int
+     * @param mensaje
+     * @return
+     */
     public static int controlBoolean(String mensaje) {
         Scanner input = new Scanner(System.in);
 
@@ -35,6 +44,11 @@ public class Functions2_EvenOrOdd {
         } while (true);
     }
 
+    /**
+     * Metodo que comprueba si el numero introducido es par o impar
+     * @param num
+     * @return
+     */
     private static boolean parIOmpar(int num) {
         if (num % 2 == 0) {
             return true;

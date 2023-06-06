@@ -5,11 +5,11 @@ import static java.lang.Float.parseFloat;
 
 /**
  * Programa llista de la compra
- * @author Jaume Gàndara i Jose Antonio Liebana
+ * @author Jose Antonio Liebana
  * @version 2.0.0
  * @date 25/02/2023
  */
-public class GandaraJaume_LiebanaJoseA {
+public class LiebanaJoseA {
     /**
      * Mètode main que crida al mètode menuPrincipal()
      * @param args de tipus String[]
