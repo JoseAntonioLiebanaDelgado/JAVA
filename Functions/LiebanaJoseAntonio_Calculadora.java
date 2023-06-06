@@ -5,7 +5,9 @@ import java.util.Scanner;
 public class LiebanaJoseAntonio_Calculadora {
     public static void main(String[] args) {
 
+        // Declaramos 3 variables float para los valores y el resultado
         float valor1 = 0.0f , valor2 = 0.0f, resultat = 0.0f;
+        // Creamos 2 variables de tipo final String para los mensajes
         final String MISSATGE_2 = "Escriu el segon valor: ";
         final String MENU_PRINCIPAL = "Les opcions del menú són:\n" +
                 "1- Suma\n" +
@@ -14,33 +16,43 @@ public class LiebanaJoseAntonio_Calculadora {
                 "4- Divisió\n" +
                 "5- Exponencial\n" +
                 "6- Sortir";
+        //Creamos una variable int para el menu
         int opcioMenu = 0;
         System.out.println("Benvingut al programa de calculadora.");
 
+        // Creamos un bucle do while para que se repita el menu hasta que el usuario elija la opcion 6
         do {
-            valor1 = llegirFloat("Escriu el primer valor: ");
-            valor2 = llegirFloat(MISSATGE_2);
 
+            // Llamamos a la funcion llegirFloat para que nos pida el valor y lo guarde en la variable valor1
+            valor1 = llegirFloat("Escriu el primer valor: ");
+            // Llamamos a la funcion llegirFloat para que nos pida el valor y lo guarde en la variable valor2
+            valor2 = llegirFloat(MISSATGE_2);
+            // Llamamos a la funcion llegirEnter para que nos pida el valor y lo guarde en la variable opcioMenu
             opcioMenu = llegirEnter(MENU_PRINCIPAL, 1, 6,"ERROR: Valor no enter.","Opcion no valida.");
 
             switch (opcioMenu) {
                 case 1:
+                    // Declaramos la variable resultat y le asignamos el valor de la funcion suma
                     resultat = suma(valor1, valor2);
                     System.out.println("El resultat de la suma és: " + resultat);
                     break;
                 case 2:
+                    // Declaramos la variable resultat y le asignamos el valor de la funcion resta
                     resultat = resta(valor1, valor2);
                     System.out.println("El resultat de la resta és: " + resultat);
                     break;
                 case 3:
+                    // Declaramos la variable resultat y le asignamos el valor de la funcion multiplicacion
                     resultat = multiplicacion(valor1, valor2);
                     System.out.println("El resultat de la multiplicació és: " + resultat);
                     break;
                 case 4:
+                    // Declaramos la variable resultat y le asignamos el valor de la funcion division
                     resultat = division(valor1, valor2);
                     System.out.println("El resultat de la divisió és: " + resultat);
                     break;
                 case 5:
+                    // Declaramos la variable resultat y le asignamos el valor de la funcion exponencial
                     resultat = exponencial(valor1, valor2);
                     System.out.println("El resultat de la exponencial és: " + resultat);
                     break;
