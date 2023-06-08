@@ -18,7 +18,7 @@ public class e4 {
     }
 
     private static char[] obtenirLletres(String nom, int x, int num) {
-        return null;
+        return new char[0];
     }
 
     private static int comptarLletres(char[] lletres) {

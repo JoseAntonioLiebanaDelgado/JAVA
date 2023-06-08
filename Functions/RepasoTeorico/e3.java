@@ -9,17 +9,16 @@ public class e3 {
 
         int numAlumnes = mostrarAlumnat(alumnat);  // Llamada al método mostrarAlumnat y se guarda el resultado en numAlumnes
         System.out.println("Hi ha " + numAlumnes + " alumnes");  // Impresión del número de alumnos
-
     }
 
-    private static int mostrarAlumnat(String[][] alumnat) {
+    private static int mostrarAlumnat(String[][] x) {
         int countAlumnes = 0;  // Variable para contar el número de alumnos
 
         // Iteración a través de las filas de la matriz
-        for (int i = 0; i < alumnat.length; i++) {
+        for (int i = 0; i < x.length; i++) {
             // Iteración a través de las columnas de cada fila
-            for (int j = 0; j < alumnat[i].length; j++) {
-                System.out.print(alumnat[i][j] + " ");  // Impresión del valor en la posición [i][j] de la matriz
+            for (int j = 0; j < x[i].length; j++) {
+                System.out.print(x[i][j] + " ");  // Impresión del valor en la posición [i][j] de la matriz
             }
             System.out.println();  // Salto de línea después de imprimir una fila completa
             countAlumnes++;  // Incremento del contador de alumnos

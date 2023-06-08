@@ -47,11 +47,7 @@ public class Biblioteca_EntradaUsuario {
                     modificarLibro(llibres, titolModificar, nouTitol);
                     break;
                 case 6:
-                    llibres = reiniciarBiblioteca(); //llibres
-                    /*private static ArrayList<String> reiniciarBiblioteca(ArrayList<String> llibres)
-                    * for(int i = llibres.length; i >= 0; i--)
-                    * llibres.remove(i)
-                    * */
+                    llibres = reiniciarBiblioteca();
                     break;
                 case 7:
                     System.out.println("Adéu");
@@ -203,7 +199,7 @@ public class Biblioteca_EntradaUsuario {
     /**
      * Mètode per a llegir una cadena per consola.
      * Creamos un metodo privado, estatico, de tipo String y como nombre llegirCadena.
-     *
+     * <p>
      * Dentro de los parentesis le pasamos un parametro de tipo String llamado missatge,
      * este missatge lo escribiremos en el main, cuando llamemos al metodo.
      *
