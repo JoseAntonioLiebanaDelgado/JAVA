@@ -47,7 +47,11 @@ public class Biblioteca_EntradaUsuario {
                     modificarLibro(llibres, titolModificar, nouTitol);
                     break;
                 case 6:
-                    llibres = reiniciarBiblioteca();
+                    llibres = reiniciarBiblioteca(); //llibres
+                    /*private static ArrayList<String> reiniciarBiblioteca(ArrayList<String> llibres)
+                    * for(int i = llibres.length; i >= 0; i--)
+                    * llibres.remove(i)
+                    * */
                     break;
                 case 7:
                     System.out.println("Adéu");
