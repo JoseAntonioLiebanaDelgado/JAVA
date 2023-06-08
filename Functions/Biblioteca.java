@@ -53,7 +53,7 @@ public class Biblioteca {
     }
 
     /**
-     * Mètode per inserir alguns llibres dins de la Biblio
+     * Mètode amb alguns llibres dins de la Biblioteca
      *
      * @return Biblioteca inicialitzada
      */
