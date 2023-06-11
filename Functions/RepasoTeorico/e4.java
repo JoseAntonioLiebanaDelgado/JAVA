@@ -11,7 +11,9 @@ public class e4 {
         boolean trobada = false;
 
         char[] lletres = obtenirLletres(nom, x, 3);
+        //private static char obtenirLletres (String nom, int x, int num)
         numLletres = comptarLletres(lletres);
+        //private static int
         imprimirLletres(lletres);
         trobada = buscarLletra(lletres, 'a');
         System.out.println(trobada);

@@ -64,14 +64,14 @@ public class Ex2Ej1 {
         return x;
     }
 
-    public static String introducirPrimeraCadena(Scanner scanner) {
+    public static String introducirPrimeraCadena(Scanner a) {
         System.out.print("Introduce la primera cadena: ");
-        return scanner.nextLine();
+        return a.nextLine();
     }
 
-    public static String introducirSegundaCadena(Scanner scanner) {
+    public static String introducirSegundaCadena(Scanner b) {
         System.out.print("Introduce la segunda cadena: ");
-        return scanner.nextLine();
+        return b.nextLine();
     }
 
     public static void compararCadenas(String cadena1, String cadena2) {

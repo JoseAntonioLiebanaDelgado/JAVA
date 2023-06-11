@@ -70,7 +70,8 @@ public class LiebanaJoseAntonio_Calculadora {
     /**
      * Esta funcion sirve para leer un numero entero con control de errores (sin limites)
      */
-    public static int llegirEnter(String missatge, int min, int max, String mensaje_error, String opcion_invalida) {
+    public static int llegirEnter(String missatge, int min, int max,
+                                  String mensaje_error, String opcion_invalida) {
         Scanner llegir = new Scanner(System.in);
 
         int x = 0;
