@@ -2,7 +2,7 @@ package utils;
 
 import java.util.Scanner;
 
-public class Utilities {
+public class Utilities { 
     /**
      * Mètode per llegir un valor int amb control d'errors
      * @since 1.2
