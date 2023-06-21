@@ -6,7 +6,7 @@
 - Los objetos tienen un estado, un comportamiento y unas propiedades.
 
 ## Ejemplo (Coche) 
-
+ 
 - Estado: Parado, circulando, aparcado, etc..
 - Propiedades: Color, peso, tamaño, etc..
 - Comportamiento: Arrancar, frenar, acelerar, girar, etc..
