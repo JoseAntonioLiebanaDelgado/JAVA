@@ -7,7 +7,7 @@ public class MatricesNotasUsuarios {
         final int filas = 5;
         final int columnas = 3;
         Scanner input = new Scanner(System.in);
-        int numAlumne = 0;
+        int numAlumne = 0; 
 
         int[][] notas; // Declarar una matriz de int de dos dimensiones
         String[] alumnes = {"Ferran", "Chris", "Montoya", "Brian", "Lluis"};
