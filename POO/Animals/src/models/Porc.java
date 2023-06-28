@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class Porc extends Mamifer implements AccionsAnimal {
     private String color;
     private boolean iberic;
-    private boolean senglar;
+    private boolean senglar; 
 
     /**
      * Constructor de la classe Porc
