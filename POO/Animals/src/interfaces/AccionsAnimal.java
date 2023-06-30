@@ -8,4 +8,4 @@ public interface AccionsAnimal {
     public abstract void parlar();
     void dormir(); // No desenvolupem el contingut del mètode. NO cal definir que és públic abstract perquè ja ho és per defecte
     void madurar(); // No desenvolupem el contingut del mètode. NO cal definir que és públic abstract perquè ja ho és per defecte
-}
+} 
