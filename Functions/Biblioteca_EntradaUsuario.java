@@ -175,14 +175,14 @@ public class Biblioteca_EntradaUsuario {
      * @return
      */
     private static int llegirEnter(String missatge, int minim, int maxim) {
-        Scanner entrada = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         int opcio = 0;
         boolean dadaCorrecte = false;
 
         do {
             System.out.println(missatge);
             try {
-                opcio = Integer.parseInt(entrada.nextLine());
+                opcio = Integer.parseInt(sc.nextLine());
                 if (opcio >= minim && opcio <= maxim) {
                     dadaCorrecte = true;
                 } else {
