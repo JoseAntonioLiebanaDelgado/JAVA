@@ -7,7 +7,7 @@ package com.jdbc.utilities;
  */
 public class MYSQLDEMOConnection {
     
-    public static final String url="jdbc:mysql://localhost:3306/BBDDJava1";
+    public static final String url="jdbc:mysql://localhost:3306/javadb";
     public static final String username="root";
     public static final String password="root";
     

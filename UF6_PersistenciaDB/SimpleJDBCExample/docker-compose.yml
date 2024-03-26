@@ -1,0 +1,26 @@
+version: '3.2'
+
+# Container
+services:
+  JavaDB1:
+    image: mysql:5
+    container_name: JavaDB1
+    restart: always
+    ports:
+      - '3306:3306'
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: javadb
+
+
+  # PHPMyAdmin
+  PHPMyAdmin1:
+    depends_on:
+      - JavaDB1
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    restart: always
+    ports:
+      - '8080:80'
+    environment:
+      PMA_HOST: JavaDB1
